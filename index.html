@@ -31,7 +31,69 @@
             window.open(window_url, "", window_style);
         }
     </script>
-
+    <style>
+        /* Additional styles to fix layout issues */
+        .headerWrapper {
+            position: relative;
+            width: 100%;
+            height: 120px;
+            background-color: #fff;
+            overflow: hidden;
+        }
+        
+        .headerWrapperFix {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .logoWrapper {
+            float: left;
+            margin: 10px 0 0 20px;
+        }
+        
+        .logo img {
+            max-height: 80px;
+        }
+        
+        .mainNav {
+            clear: both;
+            margin-top: 90px;
+            padding-left: 20px;
+            display: flex;
+        }
+        
+        .mainNav li {
+            list-style: none;
+            margin-right: 20px;
+        }
+        
+        .mainNav li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .swd-header {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            text-align: right;
+            width: 380px;
+        }
+        
+        .swd-header h1 {
+            font-size: 28px;
+            color: #333366;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .swd-header h2 {
+            font-size: 24px;
+            color: #333366;
+        }
+    </style>
 </head>
 
 <body>
@@ -88,53 +150,40 @@
                     <tr>
                         <td>
                             <div id="Div1" align="left">
-                                <div class="headerWrapper" style="background-position: right 0px;">
+                                <div class="headerWrapper">
                                     <div class="headerWrapperFix">
-                                        <h1 class="hidden"><span>
-                                            </span> BITS Pilani</h1>
                                         <div class="logoWrapper">
                                             <a href="#" class="logo" target="_blank">
                                                 <img src="images/BITS_Pilani_campus_logo.gif" alt="BITS Logo">
                                             </a>
                                         </div>
 
+                                        <!-- Fixed SWD Header -->
+                                        <div class="swd-header">
+                                            <h1>BITS Pilani</h1>
+                                            <h2>Student Welfare Division (SWD)</h2>
+                                        </div>
+
                                         <ul class="mainNav">
                                             <li><a href="Instructions.aspx">Apply For Leaves</a></li>
                                             <li><a href="Downloads/Parent's_Consent_Form.pdf" target="_blank">Download
                                                     Parent's Consent Form</a></li>
-                                            <li class=""><a href="View_Application_Status_Step1.aspx">Leaves Status</a>
-                                            </li>
+                                            <li><a href="View_Application_Status_Step1.aspx">Leaves Status</a></li>
                                         </ul>
-
-
-                                        <ul class="siteInfo" style="right: 110px; width: 380px; top: 8px; height: 50px">
-                                            <li style="width: 435px">
-                                                <p class="siteLog" style="text-align: center">
-                                                    <br>
-                                                    <span style="font-size: 0.9em"><span
-                                                            style="font-size: 1.1em">Student Welfare Division
-                                                            (SWD)</span> </span>
-                                                </p>
-                                            </li>
-                                        </ul>
-
                                     </div>
                                 </div>
                             </div>
                         </td>
                     </tr>
                     <tr>
-
                         <td class="body_txt_in" style="height: 30px">
                             <table id="UserInfo" style="width: 100%">
                                 <tbody>
                                     <tr>
-
                                         <td width="30%">
                                             <table id="table_logout_details" width="100%">
                                                 <tbody>
                                                     <tr>
-
                                                         <td>
                                                             <div id="div_logout" align="right"
                                                                 style="margin-right:20px">
@@ -148,12 +197,8 @@
                                         </td>
                                     </tr>
                                 </tbody>
-
                             </table>
-
-
                         </td>
-
                     </tr>
                     <tr>
                         <td>
@@ -163,8 +208,6 @@
                                     <tr>
                                         <td id="contentpane" style="width: 100%; vertical-align: top">
                                             <div align="center">
-
-
                                                 <table border="0" cellpadding="0" align="center" cellspacing="0"
                                                     style="width: 788px;">
                                                     <tbody>
@@ -292,9 +335,6 @@
                                                     </table>
                                                 </div><br>
                                                 <br><br>
-
-
-
                                             </div>
                                         </td>
                                     </tr>
@@ -304,18 +344,14 @@
                     </tr>
                     <tr>
                         <td>
-
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
-
-
         <script type="text/javascript">
             //<![CDATA[
-
             theForm.oldSubmit = theForm.submit;
             theForm.submit = WebForm_SaveScrollPositionSubmit;
 
@@ -324,8 +360,6 @@
             //]]>
         </script>
     </form>
-
-
 </body>
 
 </html>
