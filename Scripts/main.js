@@ -1,10 +1,3 @@
-/**
- * @author Sanjiv Sutar 
- * @Org Fractalink Design Studio
- * @Date 25th May 2011
- * 
- */
-
 var FI ={};
 
 //globalNav functionality
