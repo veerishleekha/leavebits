@@ -32,19 +32,42 @@
         }
     </script>
     <style>
-        /* Additional styles to fix layout issues */
+        /* Added custom styles to fix layout issues */
         .headerWrapper {
             position: relative;
             width: 100%;
             height: 120px;
             background-color: #fff;
-            overflow: hidden;
         }
         
-        .headerWrapperFix {
-            position: relative;
-            width: 100%;
-            height: 100%;
+        .siteInfo {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            width: 380px;
+            text-align: center;
+        }
+        
+        .swd-title {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            width: 50%;
+            text-align: right;
+            font-size: 28px;
+            font-weight: bold;
+            color: #30267A;
+        }
+        
+        .mainNav {
+            clear: both;
+            margin-top: 80px;
+            display: flex;
+            list-style: none;
+        }
+        
+        .mainNav li {
+            margin-right: 20px;
         }
         
         .logoWrapper {
@@ -52,53 +75,22 @@
             margin: 10px 0 0 20px;
         }
         
-        .logo img {
-            max-height: 80px;
-        }
-        
-        .mainNav {
-            clear: both;
-            margin-top: 90px;
-            padding-left: 20px;
-            display: flex;
-        }
-        
-        .mainNav li {
-            list-style: none;
-            margin-right: 20px;
-        }
-        
-        .mainNav li a {
-            text-decoration: none;
-            font-weight: bold;
-            color: #333;
-        }
-        
-        .swd-header {
+        .edit-button {
             position: absolute;
-            top: 30px;
-            right: 30px;
-            text-align: right;
-            width: 380px;
-        }
-        
-        .swd-header h1 {
-            font-size: 28px;
-            color: #333366;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        
-        .swd-header h2 {
-            font-size: 24px;
-            color: #333366;
+            top: 10px;
+            right: 10px;
+            z-index: 100;
+            padding: 5px 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
         }
     </style>
 </head>
 
 <body>
     <a class="edit-button" href="editpage.html">
-        <!-- You can add an icon or text inside the button -->
         <span><strong>Edit Details</strong></span>
     </a>
 
@@ -136,7 +128,6 @@
             type="text/javascript"></script>
 
         <div>
-
             <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="1A07E830">
             <input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
             <input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
@@ -152,16 +143,15 @@
                             <div id="Div1" align="left">
                                 <div class="headerWrapper">
                                     <div class="headerWrapperFix">
+                                        <h1 class="hidden"><span></span> BITS Pilani</h1>
                                         <div class="logoWrapper">
                                             <a href="#" class="logo" target="_blank">
                                                 <img src="images/BITS_Pilani_campus_logo.gif" alt="BITS Logo">
                                             </a>
                                         </div>
-
-                                        <!-- Fixed SWD Header -->
-                                        <div class="swd-header">
-                                            <h1>BITS Pilani</h1>
-                                            <h2>Student Welfare Division (SWD)</h2>
+                                        
+                                        <div class="swd-title">
+                                            Student Welfare Division (SWD)
                                         </div>
 
                                         <ul class="mainNav">
