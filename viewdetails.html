@@ -1,0 +1,152 @@
+<html>
+
+<head>
+    <title>Leave Application Details</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="https://unpkg.com/downloadjs@1.4.7"></script>
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <link type="text/css" href="css/reset.css" rel="stylesheet">
+    <link type="text/css" href="css/module.css" rel="stylesheet">
+    <link type="text/css" href="css/main.css" rel="stylesheet">
+    <script src="Scripts/viewDetailsScript. js"></script>
+    <script src="Scripts/editScript.js"></script>
+    <style>
+        .details-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border:  1px solid #CCCCCC;
+            border-radius: 5px;
+        }
+        . details-row {
+            display: flex;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .details-label {
+            font-weight: bold;
+            width: 200px;
+            color: #211D70;
+        }
+        .details-value {
+            flex: 1;
+            color: #333;
+        }
+        .button-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .btn {
+            padding: 10px 20px;
+            margin:  0 10px;
+            background-color: #211D70;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #3a3685;
+        }
+        .status-approved {
+            color: DarkGreen;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main" align="center">
+        <table id="t1" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="White">
+            <tr>
+                <td>
+                    <div align="left">
+                        <div class="headerWrapper">
+                            <div class="headerWrapperFix">
+                                <h1 class="hidden"><span></span> BITS Pilani</h1>
+                                <div class="logoWrapper">
+                                    <a href="#" class="logo" target="_blank">
+                                        <img src="images/BITS_Pilani_campus_logo.gif" alt="BITS Logo">
+                                    </a>
+                                </div>
+                                <div class="swd-title">
+                                    Student Welfare Division (SWD)
+                                </div>
+                                <ul class="mainNav">
+                                    <li><a href="index.html">Leaves Status</a></li>
+                                    <li><a href="editpage.html">Apply For Leaves</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="details-container">
+            <h2 style="color:  #211D70; text-align: center; margin-bottom: 30px;">Leave Application Details</h2>
+            
+            <div class="details-row">
+                <div class="details-label">Student ID:</div>
+                <div class="details-value" id="detail-id"></div>
+            </div>
+            
+            <div class="details-row">
+                <div class="details-label">Name:</div>
+                <div class="details-value" id="detail-name"></div>
+            </div>
+            
+            <div class="details-row">
+                <div class="details-label">Contact Number:</div>
+                <div class="details-value" id="detail-contact"></div>
+            </div>
+            
+            <div class="details-row">
+                <div class="details-label">Hostel:</div>
+                <div class="details-value" id="detail-hostel"></div>
+            </div>
+            
+            <div class="details-row">
+                <div class="details-label">Room Number:</div>
+                <div class="details-value" id="detail-room"></div>
+            </div>
+            
+            <div class="details-row">
+                <div class="details-label">Departure Date:</div>
+                <div class="details-value" id="detail-departure"></div>
+            </div>
+            
+            <div class="details-row">
+                <div class="details-label">Return Date:</div>
+                <div class="details-value" id="detail-return"></div>
+            </div>
+            
+            <div class="details-row">
+                <div class="details-label">Leave Reason:</div>
+                <div class="details-value" id="detail-reason"></div>
+            </div>
+            
+            <div class="details-row">
+                <div class="details-label">Application Status:</div>
+                <div class="details-value status-approved" id="detail-status"></div>
+            </div>
+            
+            <div class="details-row">
+                <div class="details-label">Applied On:</div>
+                <div class="details-value" id="detail-applied"></div>
+            </div>
+            
+            <div class="button-container">
+                <a href="index.html" class="btn">← Back to Status</a>
+                <button class="btn" onclick="downloadPdfForEntry()">Download Leave Approval</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
