@@ -32,7 +32,7 @@ function initializeFakeData() {
                 appliedOn: '2025-10-18'
             },
             {
-                id:  'entry_' + Date. now() + '_3',
+                id: 'entry_' + Date.now() + '_3',
                 idno: '2024A1PS0003G',
                 name: 'Alex Johnson',
                 contact: '9988776655',
