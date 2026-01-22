@@ -1,6 +1,6 @@
 // Initialize fake data if no entries exist
 function initializeFakeData() {
-    var entries = JSON.parse(localStorage. getItem('leaveEntries') || '[]');
+    var entries = JSON.parse(localStorage.getItem('leaveEntries') || '[]');
     
     // Only add fake data if no entries exist
     if (entries.length === 0) {
