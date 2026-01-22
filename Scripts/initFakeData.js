@@ -26,7 +26,7 @@ function initializeFakeData() {
                 hostel: 'Meera Bhawan',
                 room: '205',
                 departure: '2025-10-20',
-                return:  '2025-10-25',
+                return: '2025-10-25',
                 leaveReason: 'Diwali Festival',
                 status: 'Approved',
                 appliedOn: '2025-10-18'
@@ -42,7 +42,7 @@ function initializeFakeData() {
                 return: '2025-11-15',
                 leaveReason: 'Home Visit',
                 status: 'Approved',
-                appliedOn:  '2025-11-08'
+                appliedOn: '2025-11-08'
             }
         ];
         
